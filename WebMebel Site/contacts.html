@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="/css/stlye.css">
+	<link rel="stylesheet" href="/css/contacts.css">
+</head>
+
+<body>
+	<header>
+		<nav class="header__nav container">
+			<div class="header__logo"><a href="#"><img src="img/logo.svg" alt="Логотип Блога">
+					<path
+						d="M15.264 2.2L15.504 8.224H15.048C14.344 6.096 13.72 4.648 13.176 3.88C12.632 3.096 11.848 2.704 10.824 2.704H10.536V18.496H12.576V19H3.816V18.496H5.856V2.704H5.544C4.52 2.704 3.728 3.112 3.168 3.928C2.608 4.728 1.992 6.16 1.32 8.224H0.864L1.104 2.2H15.264ZM17.3868 2.2H24.8748V2.656H23.4828V10.096H28.2588V2.656H26.8428V2.2H34.3548V2.656H32.9388V18.544H34.3548V19H26.8428V18.544H28.2588V10.72H23.4828V18.544H24.8748V19H17.3868V18.544H18.8028V2.656H17.3868V2.2ZM35.9594 2.2H43.2794V2.656H41.9594V18.544H43.2794V19H35.9594V18.544H37.2794V2.656H35.9594V2.2ZM58.5506 2.656V19H55.1906L46.9586 3.472V18.544H48.2786V19H44.9906V18.544H46.3106V2.656H44.9906V2.2H51.6146L57.9026 14.248V2.656H56.5826V2.2H59.8706V2.656H58.5506ZM61.5688 2.2H68.8888V2.656H67.5688V10.24L67.7608 10.192L74.5287 2.656H72.6328V2.2H76.8328V2.656H75.3928L71.2648 7.264L77.0248 18.544H78.3208V19H70.6168V18.544H71.7448L67.7848 10.888L67.5688 10.936V18.544H68.8888V19H61.5688V18.544H62.8888V2.656H61.5688V2.2ZM84.5063 2.2H91.8263V2.656H90.5063V18.544H91.8263V19H84.5063V18.544H85.8263V2.656H84.5063V2.2ZM107.098 2.656V19H103.738L95.5055 3.472V18.544H96.8255V19H93.5375V18.544H94.8575V2.656H93.5375V2.2H100.162L106.45 14.248V2.656H105.13V2.2H108.418V2.656H107.098Z"
+						fill="#4D663C" />
+					</svg>
+				</a></div>
+			<ul class="nav__ items">
+				<li class="nav-items__ link"><a href="#">главная</a></li>
+				<li class="nav-items__ link"><a href="#">услуги</a></li>
+				<li class="nav-items__ link"><a href="#">наши работы</a></li>
+				<li class="nav-items__ link"><a href="#">галерея</a></li>
+			</ul>
+			<span class="contact">
+				<ul class="contact__ items">
+					<li class="contact__ link"><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+					<li class="contact__ link"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li class="contact__ link"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				</ul>
+			</span>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="contacts">
+			<div class="container contacts__container">
+				<div class="contacts__left">
+					<h2 class="confidence-item__title">Контактная информация</h2>
+					<a href="tel:+74992467532" class="phone phone--contacts" title="Позвонить..."><i
+							class="fa-solid fa-phone"></i>+7 (499)
+						246-75-32</a>
+					<address class="address"><i class="fa-solid fa-location-dot"></i>г. Санкт-Петербург, ул. Ленина, 9
+					</address>
+					<div id="map-test" class="map"></div>
+					<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+					</script>
+					<script src="script.js"></script>
+				</div>
+				<div class="contacts__right">
+					<div class="contacts-form-wrapper">
+						<h2 class="contacts__title blog-title">Напишите нам</h2>
+						<form action="#" class="callback-form">
+							<input type="text" class="form-input callback-form__input" placeholder="Ваше имя">
+							<input type="tel" data-tel-input class="form-input callback-form__input"
+								placeholder="Ваше телефон">
+							<textarea class=" form-textarea" placeholder="Сообщение..."></textarea>
+							<button class="form-btn">
+								<span>Отправить</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container footer__container">
+			<a class="logo footer__logo">
+				<img src="img/logo.svg" alt="Логотип Блога">
+			</a>
+			<nav class="nav footer__nav">
+				<ul class="nav__ items">
+					<li class="nav-items__ link"><a href="#">главная</a></li>
+					<li class="nav-items__ link"><a href="#">услуги</a></li>
+					<li class="nav-items__ link"><a href="#">наши работы</a></li>
+					<li class="nav-items__ link"><a href="#">галерея</a></li>
+				</ul>
+			</nav>
+			<small class="footer__copy">ООО “Организация” 2022. Все права защищены</small>
+		</div>
+	</footer>
+	<script src="/js/main.js"></script>
+	<script src="/js/aos.js"></script>
+</body>
+
+</html>
